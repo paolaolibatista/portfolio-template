@@ -1,231 +1,210 @@
-# Portfolio Template
 
-### A beautiful minimal and accessible portfolio template for Developers ✨.
+# Portfólio Pessoal - Paola Batista
 
-To View the live site click [here &rarr;](https://portfolio-template.surge.sh)
+Este é um template de portfólio pessoal desenvolvido com HTML, CSS e JavaScript, sem dependências de frameworks ou bibliotecas externas. O objetivo é criar um portfólio simples, limpo e moderno para apresentar seus projetos e experiências.
 
-![Portfolio Gif](/images/portfolio.gif)
+## Demonstração
 
-## Want to learn How to create a template like this ?
+[Link para a demonstração do portfólio](https://paolaolibatista.github.io/paola_batista_tpsi/portfolio/)
 
-You can watch [this video series](https://www.youtube.com/watch?v=1nchVfpMGSg&list=PLwJBGAxcH7GzdavgKlCACbESzr-40lw3L) on my youtube channel where I re-create this from scratch. 
+## Estrutura do Projeto
 
-
-
-## Features
-
-- Clean, Simple and Modern UI Design.
-- Uses No CSS or JavaScript Frameworks or libraries as dependencies.
-- Built with only HTML, CSS and a bit of JavaScript 🔨.
-- Well Organized Documentation.
-- Keyboard support.
-- Fully Responsive.
-- Loads fast ⚡.
-
-## Lighthouse Report
-
-![Lighthouse Report](/images/lighthouse-report.png)
-
-### Contributions are warmly welcomed ❤️.
-
-## Getting Started 🚀
-
-You'll need [Git](https://git-scm.com) to be installed on your computer. 
 ```
-# Clone this repository
-$ git clone https://github.com/nisarhassan12/portfolio-template
+portfolio-template/
+├── index.html        # Arquivo principal HTML
+├── index.css         # Arquivo de estilos CSS
+├── index.js          # Arquivo JavaScript (se necessário)
+├── images/           # Pasta para imagens e outros assets
+│   ├── favicon.png   # Ícone do site
+│   ├── header.jpg    # Imagem de fundo do cabeçalho
+│   ├── me2.jpg       # Foto pessoal
+│   ├── protoport.png # Imagem do projeto "Generic Portfolio prototype"
+│   ├── quiz.png      # Imagem do projeto "Quiz Time"
+│   ├── death_note.png# Imagem do projeto "Website"
+│   ├── github.svg    # Ícone do GitHub
+│   ├── linkedin.svg  # Ícone do LinkedIn
+│   ├── arrow-up.svg  # Ícone de seta para cima
+│   ├── ATEC_logo-removebg-preview.png # Logo ATEC
+│   ├── pngimg.com - mcdonalds_PNG21.png # Logo McDonalds
+│   ├── ATC.AS_BIG.png # Logo Altice
+│   ├── volkswagen-group-services-logo-png_seeklogo-478134.png # Logo Volkswagen
+│   └── CSCO.D.png # Logo Cisco
+└── README.md         # Este arquivo
 ```
 
-If you don't have Git installed or you don't like using the terminal then you can download the [zip](https://github.com/nisarhassan12/portfolio-template/archive/master.zip) and extract that and open the extracted folder in the code editor of your your choice.
+## Funcionalidades
 
-## Editing the Template 🔨
+- Design de UI Limpo, Simples e Moderno.
+- Sem dependências de frameworks ou bibliotecas CSS/JavaScript.
+- Construído apenas com HTML, CSS e JavaScript.
+- Documentação bem organizada.
+- Fácil de personalizar.
 
-Go to `index.html` and fill your information. 
+## Como Usar
 
-### Header
+1.  Clone este repositório:
 
-In all of the places where you're supposed to fill your information you'll find HTML comments. As shown below just replace what is already in the opening and closing tags below the comment with your information.
+    ```bash
+    git clone https://github.com/paolaolibatista/portfolio-template.git
+    ```
+
+2.  Abra o arquivo `index.html` no seu editor de código.
+
+3.  Edite as informações nas seções indicadas com comentários HTML.
+
+### Edição do Conteúdo
+
+No arquivo `index.html`, você encontrará comentários HTML indicando onde você deve inserir suas informações. Substitua os textos e links de acordo com seu perfil e projetos.
+
+#### Cabeçalho
 
 ```html
-<div class="header__text-box row">
-    <div class="header__text">
+<header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Experience</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
         <h1 class="heading-primary">
-        <!-- Replace the following name with your name -->
-        <span>Syed Ali Hussnain</span>
+          <!-- Replace the following name with your name -->
+          <span>Paola Batista</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>A Web Developer based in Lahore, Pakistan.</p>
+        <p>A aspiring Web Developer based in Setúbal, Portugal.</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
     </div>
-</div>
+  </header>
 ```
 
-### Work Section
-
-Each div with class `work__box` represents a project, replace the contents of the all the tags with the information of your projects.
+#### Projetos
 
 ```html
-<div class="work__box">
-    <div class="work__text">
-    <h3>Portfolio Template</h3>
-    <p>
-        A free Open Source Portfolio for anyone to use for free.
-    </p>
-    <ul class="work__list">
-        <li>HTML</li>
-        <li>SCSS</li>
-        <li>JavaScript</li>
-        <li>Parcel</li>
-    </ul>
+<section class="work" id="work">
+      <div class="row">
+        <h2>My Projects</h2>
+        <div class="work__boxes">
 
-    <div class="work__links">
-        <a href="#" class="link__text">
-        Visit Site <span>&rarr;</span>
-        </a> 
-        <a href="https://github.com/nisarhassan12/portfolio" target="_blank">
-        <img src="./images/github.svg" class="work__code" alt="GitHub">
-        </a>
-    </div>
-    </div>
-    <div class="work__image-box">
-        <img
-            src="./images/project-1.png"
-            class="work__image"
-            alt="Project 1"
-        />
-    </div>
-</div>
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Generic Portfolio prototype</h3>
+              <p>
+                A beginner easy to make portfolio.
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>JavaScript</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/paolaolibatista/paola_batista_tpsi/tree/main/portfolio" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/paolaolibatista/paola_batista_tpsi/tree/main" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/protoport.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
 ```
 
-For changing the screenshot:
-- first place the image in `images/` folder and then in HTML replace the name in `src` with the name of your image.
-
-- Recommended size for project image (1366 x 767px) also make sure the size of all  project images is the same.
+#### Experiência
 
 ```html
-<img
-    src="./images/name-of-your-image.png"
-    class="work__image"
-    alt="Project 1"
-/>
+   <section class="client" id="clients">
+  <div class="row">
+    <h2>Experience</h2>
+    <div class="client__logos">
+      <a href="https://www.atec.pt/" target="_blank">
+        <img src="./images/ATEC_logo-removebg-preview.png" class="client__logo" alt="ATEC Logo" />
+      </a>
+      <a href="https://www.mcdonalds.pt/" target="_blank">
+        <img src="./images/pngimg.com - mcdonalds_PNG21.png" class="client__logo" alt="McDonald's Logo" />
+      </a>
+      <a href="https://altice.net/" target="_blank">
+        <img src="./images/ATC.AS_BIG.png" class="client__logo" alt="Altice Logo" />
+      </a>
+      <a href="https://www.volkswagen-groupservices.pt/" target="_blank">
+        <img src="./images/volkswagen-group-services-logo-png_seeklogo-478134.png" class="client__logo" alt="Volkswagen Logo" />
+      </a>
+      <a href="https://www.netacad.com/" target="_blank">
+        <img src="./images/CSCO.D.png" class="client__logo" alt="Cisco Networking Academy Logo" />
+      </a>
+    </div>
+  </div>
+</section>
 ```
 
-### Clients Section
-
-- Place the logos of the clients and companies that you have worked with in `images/` directory and then replace the name in `src` with the name of your logos accordingly.
-
-- Make sure that you don't have whitespace on either side of the logos.
+#### Sobre Mim
 
 ```html
-<img
-    src="./images/your-logo.png"
-    class="client__logo"
-    alt="Your Logo"
-/>
-```
-
-### About Section
-
-- Replace the contents in the below paragraph with information about yourself.
-- Place a nice photo of yourself in the `images/` directory and then change the name in the src with your image name.
-
-```html
-<section class="about" id="about">
-    <div class="row">
+ <section class="about" id="about">
+      <div class="row">
         <h2>About Me</h2>
         <div class="about__content">
-            <div class="about__text">
-                <!-- Replace the below paragraph with info about yourself -->
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-                nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-                in vel, ex quam quidem quos mollitia labore aut sunt eius
-                ratione molestiae fuga veniam facere similique voluptate.
-                </p>
-                <!-- Provide a link to your resume -->
-                <a href="#" class="btn">My Resume</a>
-            </div>
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              I’m a programming student with hands-on experience in e-commerce management, customer service, and quality control. 
+              My background has helped me develop strong problem-solving skills, attention to detail, and a customer-focused mindset.
+              
+            </p>
+            <p>
+              I’m currently expanding my skills in HTML5, JavaScript and C#. 
+              I enjoy applying technology to real-world challenges and am eager to contribute to innovative projects.
+            </p>
+            <p>
+              I’m actively seeking opportunities to grow as a software developer and apply my diverse experience to tech-driven environments.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="#" class="btn">My Projects</a>
+          </div>
 
-            <div class="about__photo-container">
-                <!-- Add a nice photo of yourself -->
-                <img
-                class="about__photo"
-                src="./images/syed-ali-hussnain.jpg"
-                alt=""
-                />
-            </div>
-        </div>
-    </div>
-</section>
-```
-
-### Contact Section
-
-- Modify the paragraph to your likings.
-- Replace the email with yours in the `href` anchor property and the text also.
-
-```html
-<section class="contact" id="contact">
-      <div class="row">
-        <h2>Get in Touch</h2>
-        <div class="contact__info">
-          <p>
-            Are you looking for a fast-performing and user-friendly website to
-            represent your product or business? or looking for any kind of
-            consultation? or want to ask questions? or have some advice for me
-            or just want to say "Hi 👋" in any case feel free to Let me know. I
-            will do my best to respond back. 😊 The quickest way to reach out to
-            me is via an email.
-          </p>
-          <!-- Replace the email with yours -->
-          <a href="mailto:you@example.com" class="btn">you@example.com</a>
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/me2.jpg" alt="" />
+          </div>
         </div>
       </div>
-</section>
+    </section>
 ```
 
-### Footer
-
-- Replace the `href` attribute values to your profile URLs for all anchors.
-- Remove the div with class `footer__github-buttons`.
-
+#### Contato
 ```html
-<footer role="contentinfo" class="footer">
+  <section class="contact" id="contact">
     <div class="row">
-        <!-- Update the links to point to your accounts -->
-        <ul class="footer__social-links">
-            <li class="footer__social-link-item">
-                <a href="https://twitter.com/nisarhassan12/">
-                    <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-                </a>
-            </li>
-            <li class="footer__social-link-item">
-                <a href="https://github.com/nisarhassan12/">
-                    <img src="./images/github.svg" class="footer__social-image" alt="Github">
-                </a>
-            </li>
-            <li class="footer__social-link-item">
-                <a href="https://codepen.io/nisar_hassan">
-                    <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-                </a>
-            </li>
-            <li class="footer__social-link-item">
-                <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-                    <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
-                </a>
-            </li>
-        </ul>
-
-        <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
         <p>
-          &copy; 2020 - Template designed & developed by <a href="https://nisar.dev">Nisar</a>.
+          If there's any quest you may have or looking for any kind of
+          consultation? or have some advice for me
+          or just want to say "Hi 👋" in any case feel free to Let me know. I
+          will do my best to respond back. 😊 The quickest way to reach out to
+          me is via an email.
         </p>
-        <div class="footer__github-buttons">
-          <iframe
-            src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true" 
-            frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-          </iframe>
-        </div>
+        <!-- Replace the email with yours -->
+        <a href="mailto:paola.batista.411999@gmail.com" class="btn">Email Me</a>
+      </div>
     </div>
-</footer>
+  </section>
 ```
+
+## Créditos
+
+Template desenvolvido por [Nisar Hassan Naqvi](https://nisar.dev).
