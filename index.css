@@ -508,7 +508,6 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Clients ----- */
 /* --------------------------------------- */
-
 .client__logos {
     display: flex;
     justify-content: space-between;
@@ -530,6 +529,32 @@ body:not(.user-is-tabbing) a:focus {
         margin-right: var(--gutter-medium);
     }
 }
+/*.clients-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;               
+    filter: invert(10%) grayscale(10%) opacity(.8);
+    gap: var(--gutter-small);     
+}
+
+.clients-list img {
+    max-width: 120px;              
+    max-height: 120px;              
+    object-fit: contain;           
+    display: block;
+}
+
+@media(max-width: 1240px) {
+    .clients-list {
+        overflow-x: auto;          
+        padding: var(--gutter-normal);
+    }
+
+    .clients-list img {
+        flex-shrink: 0;            
+    }
+}*/
 
 /* --------------------------------------- */
 /* ----- About ----- */
