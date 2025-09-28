@@ -552,6 +552,13 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
+.about__photo {
+    max-width: 85%;   /* ocupa metade no PC */
+    height: auto;
+    display: block;
+    margin: 0 auto;    /*centra horizontalmente */
+}
+
 @media(min-width: 901px) {
     .about__text {
         flex: 0 0 35%;
