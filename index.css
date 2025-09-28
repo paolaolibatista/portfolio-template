@@ -578,10 +578,10 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .about__photo {
-    max-width: 85%;   /* ocupa metade no PC */
+    max-width: 85%;   
     height: auto;
     display: block;
-    margin: 0 auto;    /*centra horizontalmente */
+    margin: 0 auto;    
 }
 
 @media(min-width: 901px) {
